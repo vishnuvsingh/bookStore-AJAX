@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+      });
+
+        $(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+
+    </script>
+
+
+
+    </head>
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+ 		<a class=“right” id="search"><img src="images/mag.png" alt="" style="width:20px; height:20px; cursor: pointer;"/></a>
+   <!-- <?php if($_SESSION["name"]!=""){ echo "<a class='right' style='float:right;' href='index.php'>Logout</a>";}
+         else{ echo " -->
+         <a class='right' style='float:right;' href='index.html'>Logout</a>
+         <!-- ";
+     }    ?>  -->
+		<a class="right" id="CartLink">Cart</a>
+		<!--a class="right" href="http://localhost/Webtech_Project/top_charts.php">Top Charts</a-->
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+
+	</div>
+
+	<div  id="product">
+   <div class="book_image">
+		 <img id="book_img" src="images/loading2.gif" height="450px" width="400px"/>
+	 </div>
+	 <div class="book_data">
+		 <label id="book_title" style="text-align: center; font-size:60px; text-decoration:underline;"></label>
+		 <br/><br/><br/><br/>
+		 <label id="book_author" style="font-size:25px;"></label>
+		 <br/><br/><br/><br/>
+		 <label id = 'book_rating' style="font-size:25px;"></label>
+		 <br/><br/>
+		 <br/><br/>
+		 <label style="font-size:25px;">&#8377; 499</label>
+		 <br/><br/><br/><br/>
+		 <button id="cartbtn" class="addcart" onclick="addToCart2()">Add to cart</button>
+	 </div>
+	</div>
+ </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1 style="text-align: center; font-family:champagne;font-size:60px">Book Finder</h1>
+    </div>
+    <div class="modal-body">
+
+  <input id="searchtext" type="text" class="searchb" list="artists" name="userName" placeholder="Title/Author" value="" list="user-datalist" required autofocus>
+  <input class="sear" id="sub" type="submit" value="Search" onclick="search()">
+    </div>
+  </div>
+
+</div>
+
+
+
+ <div class="alb">
+ 	<div class="text"> Similar Books </div>
+ 	 <div id="carousel" style="padding-bottom: 55px">
+      <a id="a1"><img src = "images/loading1.gif" id="item-1" height="400px" width="400px" /></a>
+      <a id="a2"><img src = "images/loading1.gif" id="item-2" height="400px" width="400px" /></a>
+      <a id="a3"><img src = "images/loading1.gif" id="item-3" height="400px" width="400px" /></a>
+      <a id="a4"><img src = "images/loading1.gif" id="item-4" height="400px" width="400px" /></a>
+      <a id="a5"><img src = "images/loading1.gif" id="item-5" height="400px" width="400px" /></a>
+    </div>
+    </div>
+</body>
+<script src="js/search-modal.js"></script>
+<script src="integrator/product.js"></script>
+
+</html>

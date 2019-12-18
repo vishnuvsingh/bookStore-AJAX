@@ -1,0 +1,172 @@
+body{
+	margin:0px;
+    background-color:#e3e3e3;
+	}
+
+
+
+	@font-face {
+    font-family: shorelines;
+    src: url("../fonts/shorelines.otf");
+}
+
+@font-face {
+	font-family: athene;
+	src: url("../fonts/Athene.otf");
+}
+
+	@font-face {
+    font-family: prisma;
+    src: url("../fonts/Prisma.ttf");
+}
+
+	@font-face {
+    font-family: paperdaisy;
+    src: url("../fonts/paperdaisy.ttf");
+}
+
+	@font-face {
+    font-family: fifty;
+    src: url("../fonts/fifty-five.otf");
+}
+
+	@font-face {
+    font-family: fish;
+    src: url("../fonts/fishchips.ttf");
+}
+
+	@font-face {
+    font-family: champagne;
+    src: url("../fonts/champagne.ttf");
+}
+
+
+.back {
+    background-color: #e3e3e3;
+    width: 100%;
+    height:100%;
+    padding:50px 0;
+    background-size: cover;
+    position: relative;
+
+}
+
+.main {
+    margin-top: 0px; /* Add a top margin to avoid content overlay */
+}
+
+#log{
+    float:left;
+}
+
+.right{
+
+    font-family: champagne;
+    color: black;
+    /*margin-top: 10 px;*/
+}
+
+.text{
+    text-align: center;
+    color: black;
+    font-family: champagne;
+    font-size: 40px;
+    padding-top: 0px;
+    top:5px;
+    width:100%;
+}
+.text #search_crit{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+#noElem{
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-family: champagne;
+    font-size: 40px;
+}
+
+
+#searchTab {
+  font-family: sans-serif;
+  font-size:20px;
+  border-collapse: collapse;
+  width: 80%;
+  background-color:#d3d3d3;
+  align-self: center;
+  margin: 0px auto;    
+border: 1px solid #ddd;
+
+}
+
+#searchTab tr {
+
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+#searchTab td{
+      border: 1px solid #ddd;
+
+  padding: 10px 20px 10px 20px;
+  text-align:center;
+}
+
+th{
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  background-color:#f2f2f2;
+}
+
+td#pr{
+  padding: 8px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}  
+
+th#pri{
+  padding: 8px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+  background-color:#f2f2f2;
+}  
+
+#searchTab img{
+  width:90px;
+  border: 1px solid #808080;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+
+#searchAgain{
+    text-align: center;
+    width:100%;
+}
+
+
+input[type=text]{
+  font-family: sans-serif;
+  font-size:15px;  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #696969;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+button{
+  font-family: sans-serif;
+  font-size:15px;  
+  padding: 12px 20px;
+  margin: 8px 0;
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	
+  <script type="text/javascript">
+    /*
+		$(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+  */
+	</script>
+
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+ 		<a class=“right” id="search"><img src="images/mag.png" alt="" style="width:20px; height:20px; cursor: pointer;"/></a>
+   <!-- <?php if($_SESSION["name"]!=""){ echo "<a class='right' style='float:right;' href='index.php'>Logout</a>";}
+         else{ echo " -->
+         <a class='right' style='float:right;' href='index.html'>Logout</a>
+         <!-- ";
+     }    ?>  -->
+		<a class="right" id="CartLink">Cart</a>
+		<!--a class="right" href="http://localhost/Webtech_Project/top_charts.php">Top Charts</a-->
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+
+	</div>
+	<div align="center" id="audi">
+	 <div class="listen">Thank you for ordering on the Big Book Barn!<br>Please collect and pay for your order at the University Library during college hours (8 a.m. to 5 p.m.) after 3 days.<br> <span style= "font-size:30px"> Please remember to carry your ID cards when you come to collect your books.  </span></div>
+	</div>
+ </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1 style="text-align: center; font-family:champagne;font-size:60px">Book Finder</h1>
+    </div>
+    <div class="modal-body">
+
+  <input id="searchtext" type="text" class="searchb" list="artists" name="userName" placeholder="Title/Author" value="" list="user-datalist" required autofocus>
+  <input class="sear" id="sub" type="submit" value="Search" onclick="search()">
+    </div>
+  </div>
+
+</div>
+
+<script src="js/search-modal.js"></script>
+<script src="integrator/checkout.js"></script>
+
+</html>

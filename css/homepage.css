@@ -1,0 +1,141 @@
+body{
+	margin:0px;
+	}
+
+
+
+	@font-face {
+    font-family: shorelines;
+    src: url("../fonts/shorelines.otf");
+}
+
+@font-face {
+	font-family: athene;
+	src: url("../fonts/Athene.otf");
+}
+
+	@font-face {
+    font-family: prisma;
+    src: url("../fonts/Prisma.ttf");
+}
+
+	@font-face {
+    font-family: paperdaisy;
+    src: url("../fonts/paperdaisy.ttf");
+}
+
+	@font-face {
+    font-family: fifty;
+    src: url("../fonts/fifty-five.otf");
+}
+
+	@font-face {
+    font-family: fish;
+    src: url("../fonts/fishchips.ttf");
+}
+
+	@font-face {
+    font-family: champagne;
+    src: url("../fonts/champagne.ttf");
+}
+ 	#carousel {
+    	width:100%;
+        /*border:1px solid #222;*/
+        height:470px;
+        position:relative;
+        align-items: center;
+        clear:both;
+        overflow:hidden;
+        /*background:#FFF;*/
+      }
+
+     #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+
+	.back {
+	background: url("../images/wt1.jpeg") no-repeat center;
+	/*display: table;*/
+	width: 100%;
+
+	padding:350px 0;
+	background-size: cover;
+	position: relative;
+
+}
+	.alb{
+		background-color: #e3e3e3;
+		width:100%;
+	}
+
+
+.main {
+    margin-top: 0px; /* Add a top margin to avoid content overlay */
+}
+
+#log{
+	float:left;
+}
+
+.right{
+
+	font-family: champagne;
+	color: black;
+	/*margin-top: 10 px;*/
+}
+
+#prev{
+	float:left;
+}
+
+#next{
+	float:right;
+}
+
+.text{
+	text-align: center;
+	text-decoration: underline;
+	color: black;
+	font-family:champagne;
+	font-size: 75px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+	.left{
+	    background-color:rgba(0,191,255,0.3);
+    color: white;
+	height:60px;
+	width:60px;
+	border:none;
+	margin:10px;
+	}
+#audi{
+text-align:center;
+margin-top:0px;
+}
+#au1{
+margin-left:40px;
+}
+#au2{
+margin-right:40px;
+}
+#usernameDisp{
+	font-family:athene;
+	font-size:40px;
+	padding-bottom:30px;
+	color:black;
+}
+.listen{
+font-family:athene;
+font-size:70px;
+padding-bottom:30px;
+color:black;
+}
+.day{
+font-family:shorelines;
+font-size:20px;
+padding-top:30px;
+color:white;
+}

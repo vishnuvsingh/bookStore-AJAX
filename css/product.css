@@ -1,0 +1,150 @@
+body{
+	margin:0px;
+	}
+
+
+
+	@font-face {
+    font-family: shorelines;
+    src: url("../fonts/shorelines.otf");
+}
+
+@font-face {
+	font-family: athene;
+	src: url("../fonts/Athene.otf");
+}
+
+	@font-face {
+    font-family: prisma;
+    src: url("../fonts/Prisma.ttf");
+}
+
+	@font-face {
+    font-family: paperdaisy;
+    src: url("../fonts/paperdaisy.ttf");
+}
+
+	@font-face {
+    font-family: fifty;
+    src: url("../fonts/fifty-five.otf");
+}
+
+	@font-face {
+    font-family: fish;
+    src: url("../fonts/fishchips.ttf");
+}
+
+	@font-face {
+    font-family: champagne;
+    src: url("../fonts/champagne.ttf");
+}
+ 	#carousel {
+    	width:100%;
+        /*border:1px solid #222;*/
+        height:470px;
+        position:relative;
+        align-items: center;
+        clear:both;
+        overflow:hidden;
+        /*background:#FFF;*/
+      }
+
+     #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+
+	.back {
+	/*background: url("../images/wt1.jpeg") no-repeat center;
+	/*display: table;*/
+	background-color: #e3e3e3;
+	width: 100%;
+
+	padding:165px 0;
+	background-size: cover;
+	position: relative;
+
+}
+	.alb{
+		background-color: #e3e3e3;
+		width:100%;
+	}
+
+
+.main {
+    margin-top: 0px; /* Add a top margin to avoid content overlay */
+}
+
+#log{
+	float:left;
+}
+
+.right{
+
+	font-family: champagne;
+	color: black;
+	/*margin-top: 10 px;*/
+}
+
+#prev{
+	float:left;
+}
+
+#next{
+	float:right;
+}
+
+.text{
+	text-align: center;
+	text-decoration: underline;
+	color: black;
+	font-family:champagne;
+	font-size: 75px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+	.left{
+	    background-color:rgba(0,191,255,0.3);
+    color: white;
+	height:60px;
+	width:60px;
+	border:none;
+	margin:10px;
+	}
+#product{
+/*text-align:center;*/
+display: flex;
+margin-left:95px;
+}
+
+.book_image{
+	border: 3px solid black;
+	margin-left: 125px;
+}
+
+.book_data{
+	margin-left: 70px;
+	margin-top: -10px;
+}
+
+.addcart{
+	background-color: #e3e3e3;
+  color: black;
+  border: 2px solid black;
+	padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+	border-radius: 7px;
+
+}
+
+.addcart:hover{
+	background-color: #555555;
+  color: white;
+}

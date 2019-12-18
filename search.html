@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+        $(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+	</script>
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+ 		<a class="right" id="search"><img src="images/mag.png" alt="" style="width:20px; height:20px; cursor: pointer;"/></a>
+         <a class='right' style='float:right;' href='index.html'>Logout</a>
+		<a class="right" id="CartLink">Cart</a>
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+</div>
+
+
+<br>
+
+<div id="searchAgain">
+<input type='text' placeholder='Enter Title' id="SearchKey">&nbsp&nbsp
+<button id="SearchBut" onclick="search()">Search</button>
+</div>
+<br><br>
+
+
+<div class="text" id="txt">Search results for <span id="searchtitle"></span>.</div>
+
+
+
+
+
+
+<!--
+<table id="searchTab">
+<tr>
+    <th>Cover</th>
+    <th>Title and Author Details</th>
+    <th id="pri">Price</th>
+  </tr>
+
+
+  <tr>
+    <td><img src="https://images.gr-assets.com/books/1457810586m/12232938.jpg"></td>
+    <td>Lovely Bones<br><br>By Stephanie blah blah</td>
+    <td id="pr">₹499.00</td>
+  </tr>
+
+</table>
+
+
+
+<div id="noElem">Sorry, no results found!<br>
+Please check the spelling or try searching for something else.</div> <br>
+
+-->
+<br><br>
+<div id="noElem"></div> <br>
+
+
+
+
+
+
+
+	
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1 style="text-align: center; font-family:champagne;font-size:60px">Book Finder</h1>
+    </div>
+    <div class="modal-body">
+
+  <input id="searchtext" type="text" class="searchb" list="artists" name="userName" placeholder="Title/Author" value="" list="user-datalist" required autofocus>
+  <input class="sear" id="sub" type="submit" value="Search" onclick="search2()">
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="js/search-modal.js"></script>
+
+<script type="text/javascript" src="integrator/search.js"></script>
+
+</html>
